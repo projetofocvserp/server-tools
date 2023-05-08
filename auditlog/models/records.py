@@ -15,6 +15,7 @@ class AuditlogRecords(models.Model):
         """
         Generate rule lines automatically when installing or updating the app
         Terms that included in excluded_terms list gives an error
+        TODO: Fix 'update' to make it viable
         """
         # excluded_terms = ['wizard', 'base', '.assets', '.test', '.tour', 'auditlog', 'ir.', 'bus.']
         excluded_terms = ['wizard', 'base', 'auditlog', 'ir.', 'bus.']
